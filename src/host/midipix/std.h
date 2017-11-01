@@ -20,6 +20,7 @@ uint16_t * wcsstr_host (const uint16_t *, const wchar_t *);
 #define wcsstr	wcsstr_host
 
 #include "charset.h"
+#include "literals.h"
 #include "../../std.h"
 
 #endif

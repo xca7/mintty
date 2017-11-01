@@ -11,6 +11,7 @@
 #include <features.h>
 #include <stdint.h>
 #include <stddef.h>
+#include <stdbool.h>
 #include <wchar.h>
 
 size_t     wcslen_host (const uint16_t *);

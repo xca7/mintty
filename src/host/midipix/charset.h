@@ -9,4 +9,6 @@
 #define HAS_LOCALES 1
 #endif
 
+extern bool cs_ambig_wide;
+
 #endif

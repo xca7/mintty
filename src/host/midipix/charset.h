@@ -29,6 +29,14 @@ int cs_strconv_utf8_to_utf16(
 	uint16_t *		wch,
 	int			wchlen);
 
+int cs_print_font_info(
+	const char *		fmt,
+	int32_t			weight,
+	const uint16_t *	fn_utf16,
+	const uint16_t *	st_utf16,
+	const uint16_t *	face_utf16,
+	const uint16_t *	style_utf16);
+
 #define WideCharToMultiByte	cs_strconv_utf16_to_utf8
 #define MultiByteToWideChar	cs_strconv_utf8_to_utf16
 

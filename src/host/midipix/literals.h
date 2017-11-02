@@ -41,5 +41,21 @@
 #define U16_LITERAL_LOCENV			(uint16_t[]){'*', ' ', 'L', 'o', 'c', 'a', 'l', 'e', ' ', 'e', 'n', 'v', 'i', 'r', 'o', 'n', 'm', '0'}
 #define U16_LITERAL_LOCALE			(uint16_t[]){'=', ' ', 'c', 'f', 'g', '.', ' ', 'T', 'e', 'x', 't', ' ', 'L', 'o', 'c', 'a', 'l', 'e', ' ', '=', '0'}
 #define U16_LITERAL_DOWNLOADED			(uint16_t[]){'d', 'o', 'w', 'n', 'l', 'o', 'a', 'd', 'e', 'd', ' ', '/', ' ', 'g', 'i', 'v', 'e', ' ', 'm', 'e', ' ', 'a', ' ', 'n', 'a', 'm', 'e', '0'}
+#define U16_LITERAL_LANG			(uint16_t[]){'l', 'a', 'n', 'g', '0'}
+#define U16_LITERAL_DEFAULTBEEP			(uint16_t[]){'.', 'D', 'e', 'f', 'a', 'u', 'l', 't', '0'}
+#define U16_LITERAL_CRITICALSTOP		(uint16_t[]){'S', 'y', 's', 't', 'e', 'm', 'H', 'a', 'n', 'd', '0'}
+#define U16_LITERAL_QUESTION			(uint16_t[]){'S', 'y', 's', 't', 'e', 'm', 'Q', 'u', 'e', 's', 't', 'i', 'o', 'n', '0'}
+#define U16_LITERAL_EXCLAMATNION		(uint16_t[]){'S', 'y', 's', 't', 'e', 'm', 'E', 'x', 'c', 'l', 'a', 'm', 'a', 't', 'i', 'o', 'n', '0'}
+#define U16_LITERAL_ASTERISK			(uint16_t[]){'S', 'y', 's', 't', 'e', 'm', 'A', 's', 't', 'e', 'r', 'i', 's', 'k', '0'}
+#define U16_LITERAL_DATA_TEXT_PLAIN		(uint16_t[]){'d', 'a', 't', 'a', ':', 't', 'e', 'x', 't', '/', 'p', 'l', 'a', 'i', 'n', '0'}
+#define U16_LITERAL_HTTP			(uint16_t[]){'h', 't', 't', 'p', ':', '0'}
+#define U16_LITERAL_HTTPS			(uint16_t[]){'h', 't', 't', 'p', 's', ':', '0'}
+#define U16_LITERAL_FTP				(uint16_t[]){'f', 't', 'p', ':', '0'}
+#define U16_LITERAL_FTPS			(uint16_t[]){'f', 't', 'p', 's', ':', '0'}
+#define U16_LITERAL_THEME			(uint16_t[]){'t', 'h', 'e', 'm', 'e', 's', '0'}
+#define U16_LITERAL_DEFAULT_PRINTER		(uint16_t[]){'*', ' ', 'D', 'e', 'f', 'a', 'u', 'l', 't', ' ', 'p', 'r', 'i', 'n', 't', 'e', 'r', ' ', '*', '0'}
+#define U16_LITERAL_NO_PRINTER			(uint16_t[]){'*', ' ', 'N', 'o', 'n', 'e', ' ', '(', 'p', 'r', 'i', 'n', 't', 'i', 'n', 'g', ' ', 'd', 'i', 's', 'a', 'b', 'l', 'e', 'd', ')', ' ', '*', '0'}
+#define U16_LITERAL_NO_SOUND			(uint16_t[]){'*', ' ', 'N', 'o', 'n', 'e', ' ', '(', 's', 'y', 's', 't', 'e', 'm', ' ', 's', 'o', 'u', 'n', 'd', ')', ' ', '*', '0'}
+#define U16_LITERAL_NONE2			(uint16_t[]){'*', ' ', 'N', 'o', 'n', 'e', ' ', '*', '0'}
 
 #endif

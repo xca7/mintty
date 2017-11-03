@@ -16,12 +16,17 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <wchar.h>
+#include <time.h>
 
 #include <sys/ioctl.h>
 #include <sys/ttydefaults.h>
 
 #ifndef O_BINARY
 #define O_BINARY 0
+#endif
+
+#ifndef CDEL
+#define CDEL CERASE
 #endif
 
 #ifndef min

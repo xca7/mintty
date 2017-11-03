@@ -65,15 +65,19 @@ tempfile_deref(tempfile_t *tempfile)
     tempfile_destroy(tempfile);
 }
 
+#ifndef NULL_FILE_POSITION
+#define NULL_FILE_POSITION 0
+#endif
+
 static size_t
 tempfile_size(tempfile_t *tempfile)
 {
-  fpos_t fsize = 0;
+  fpos_t fsize = NULL_FILE_POSITION;
 
   fseek(tempfile->fp, 0L, SEEK_END);
   fgetpos(tempfile->fp, &fsize);
 
-  return (size_t)fsize;
+  return *(off_t *)&fsize;
 }
 
 static tempfile_t *

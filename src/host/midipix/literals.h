@@ -7,6 +7,10 @@
 #define U16_LITERAL_EQUALS			(uint16_t[]){'=', '0'}
 #define U16_LITERAL_AT				(uint16_t[]){'@', '0'}
 #define U16_LITERAL_PO				(uint16_t[]){'.', 'p', 'o', '0'}
+#define U16_LITERAL_X				(uint16_t[]){'X',0}
+#define U16_LITERAL_RIGHT_ARROW			(uint16_t[]){'>',0}
+#define U16_LITERAL_LEFT_ARROW			(uint16_t[]){'<',0}
+#define U16_LITERAL_BUTTON			(uint16_t[]){'B','U','T','T','O','N',0}
 #define U16_LITERAL_DOS_BASE			(uint16_t[]){'\\','\\','?','\\',0}
 #define U16_LITERAL_UNC_BASE			(uint16_t[]){'\\','\\','?','\\','U','N','C','\\',0}
 #define U16_LITERAL_INTEGRAL_FAKED		(uint16_t[]){'/','/','\\','|','|','|',0}

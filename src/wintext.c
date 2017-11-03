@@ -311,7 +311,7 @@ static void
 adjust_font_weights(struct fontfam * ff)
 {
   LOGFONTW lf;
-#if CYGWIN_VERSION_API_MINOR >= 201
+#if (CYGWIN_VERSION_API_MINOR >= 201) && (__SIZEOF_WCHAR_T__ == 2)
   swprintf(lf.lfFaceName, lengthof(lf.lfFaceName), W("%ls"), ff->name);
 #else
   if (wcslen(ff->name) < lengthof(lf.lfFaceName))

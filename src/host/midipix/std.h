@@ -29,6 +29,10 @@
 #define CDEL CERASE
 #endif
 
+#ifndef NULL_FILE_POSITION
+#define NULL_FILE_POSITION {{0}}
+#endif
+
 #ifndef min
 #define min(a,b) (((a) < (b)) ? (a) : (b))
 #endif

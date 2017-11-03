@@ -10,4 +10,8 @@ int     mkdirat_host       (int, const char *, mode_t);
 #define login               login_host
 #define mkdirat             mkdirat_host
 
+#ifndef CopyMemory
+#define CopyMemory          memcpy
+#endif
+
 #endif

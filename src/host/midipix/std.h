@@ -21,6 +21,10 @@
 #include <sys/ioctl.h>
 #include <sys/ttydefaults.h>
 
+#ifndef MAXLONG
+#define MAXLONG (0x7fffffff)
+#endif
+
 #ifndef O_BINARY
 #define O_BINARY 0
 #endif

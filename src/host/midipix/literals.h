@@ -65,5 +65,9 @@
 #define U16_LITERAL_NO_PRINTER			(uint16_t[]){'*',' ','N','o','n','e',' ','(','p','r','i','n','t','i','n','g',' ','d','i','s','a','b','l','e','d',')',' ','*',0}
 #define U16_LITERAL_NO_SOUND			(uint16_t[]){'*',' ','N','o','n','e',' ','(','s','y','s','t','e','m',' ','s','o','u','n','d',')',' ','*',0}
 #define U16_LITERAL_NONE2			(uint16_t[]){'*',' ','N','o','n','e',' ','*',0}
+#define U16_LITERAL_FRAKTUR			(uint16_t[]){'F','r','a','k','t','u','r',0}
+#define U16_LITERAL_BLACKLETTER			(uint16_t[]){'B','l','a','c','k','l','e','t','t','e','r',0}
+#define U16_LITERAL_INFO			(uint16_t[]){'i','n','f','o',0}
+#define U16_LITERAL_CHARNAMES_TXT		(uint16_t[]){'c','h','a','r','n','a','m','e','s','.','t','x','t',0}
 
 #endif

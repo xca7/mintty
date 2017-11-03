@@ -41,6 +41,7 @@ size_t     wcslen_host        (const uint16_t *);
 uint16_t * wcsstr_host        (const uint16_t *, const uint16_t *);
 uint16_t * wcsdup_host        (const uint16_t *);
 uint16_t * wcscpy_host        (uint16_t *, const uint16_t *);
+uint16_t * wcsncpy_host       (uint16_t *, const uint16_t *, size_t);
 uint16_t * wcschr_host        (const uint16_t *, uint16_t);
 uint16_t * wcsrchr_host       (const uint16_t *, uint16_t);
 uint16_t * wcscat_host        (uint16_t *, const uint16_t *);
@@ -55,13 +56,14 @@ size_t     mbrtowc_host       (uint16_t *, const char *, size_t, mbstate_t *);
 #define    wcsstr              wcsstr_host
 #define    wcsdup              wcsdup_host
 #define    wcscpy              wcscpy_host
+#define    wcsncpy             wcsncpy_host
 #define    wcschr              wcschr_host
 #define    wcsrchr             wcsrchr_host
 #define    wcscat              wcscat_host
 #define    wcscmp              wcscmp_host
 #define    wcsncmp             wcsncmp_host
 #define    wcsspn              wcsspn_host
-#define    wcscspn              wcscspn_host
+#define    wcscspn             wcscspn_host
 #define    mbstowcs            mbstowcs_host
 #define    mbrtowc             mbrtowc_host
 

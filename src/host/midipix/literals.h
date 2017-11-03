@@ -9,6 +9,7 @@
 #define U16_LITERAL_PO				(uint16_t[]){'.', 'p', 'o', '0'}
 #define U16_LITERAL_DOS_BASE			(uint16_t[]){'\\','\\','?','\\',0}
 #define U16_LITERAL_UNC_BASE			(uint16_t[]){'\\','\\','?','\\','U','N','C','\\',0}
+#define U16_LITERAL_INTEGRAL_FAKED		(uint16_t[]){'/','/','\\','|','|','|',0}
 #define U16_LITERAL_LUCIDA_CONSOLE		(uint16_t[]){'L', 'i', 'c', 'd', 'a', ' ', 'C', 'o', 'n', 's', 'o', 'e', '0'}
 #define U16_LITERAL_DISPFILENAME 		(uint16_t[]){'D', 'i', 's', 'p', 'F', 'i', 'l', 'e', 'N', 'a', 'm', 'e', '0'}
 #define U16_LITERAL_CFG_DEFAULT 		(uint16_t[]){'*', '0'}

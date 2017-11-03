@@ -2431,7 +2431,13 @@ list_fonts(bool report)
       fn = renewn(fn, wcslen(fn) + 1);
 
       if (report)
-        printf("%03ld %ls|%ls [2m[%ls|%ls][0m\n", (long int)lfp->lfWeight, fn, st, lfp->lfFaceName, lpelf->elfStyle);
+#if (__SIZEOF_WCHAR_T__ == 4)
+        cs_print_font_info(
+		"%03ld %ls|%ls [%ls|%ls]\n",
+		lfp->lfWeight, fn, st, lfp->lfFaceName, lpelf->elfStyle);
+#else
+        printf("%03ld %ls|%ls [%ls|%ls]\n", (long int)lfp->lfWeight, fn, st, lfp->lfFaceName, lpelf->elfStyle);
+#endif
       else
         enterfontlist(fn, lfp->lfWeight, st);
     }

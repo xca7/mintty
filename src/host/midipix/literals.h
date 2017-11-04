@@ -69,5 +69,16 @@
 #define U16_LITERAL_BLACKLETTER			(uint16_t[]){'B','l','a','c','k','l','e','t','t','e','r',0}
 #define U16_LITERAL_INFO			(uint16_t[]){'i','n','f','o',0}
 #define U16_LITERAL_CHARNAMES_TXT		(uint16_t[]){'c','h','a','r','n','a','m','e','s','.','t','x','t',0}
+#define U16_LITERAL_CACHE			(uint16_t[]){'c','a','c','h','e',0}
+#define U16_LITERAL_DATA			(uint16_t[]){'d','a','t','a',0}
+#define U16_LITERAL_HOME			(uint16_t[]){'h','o','m','e',0}
+#define U16_LITERAL_MNT				(uint16_t[]){'m','n','t',0}
+#define U16_LITERAL_WWW				(uint16_t[]){'w','w','w','.',0}
+#define U16_LITERAL_ROOT			(uint16_t[]){'r','o','o','t',0}
+#define U16_LITERAL_ROOTFS			(uint16_t[]){'/','r','o','o','t','f','s',0}
+#define U16_LITERAL_LXSS			(uint16_t[]){'/','l','x','s','s',0}
+#define U16_LITERAL_DEV_FS			(uint16_t[]){'/','d','e','v','/','f','s',0}
+#define U16_LITERAL_BASIC_COLOURS		(uint16_t[]){'B','&','a','s','i','c',' ','C','o','l','o','u','r','s',0}
+#define U16_LITERAL_STATIC			(uint16_t[]){'S','t','a','t','i','c',0}
 
 #endif

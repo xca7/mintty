@@ -21,6 +21,10 @@
 #include <sys/ioctl.h>
 #include <sys/ttydefaults.h>
 
+#ifndef WINAPI_UTF16_DEFAULT
+#define WINAPI_UTF16_DEFAULT (1)
+#endif
+
 #ifndef MAXLONG
 #define MAXLONG (0x7fffffff)
 #endif

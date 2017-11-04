@@ -621,11 +621,13 @@ paste_hdrop(HDROP drop)
             *p = '/';
           }
         }
+#ifdef __CYGWIN__
         else if (strncmp(p, "/cygdrive/", 10) == 0) {
           // convert /cygdrive/X/path referring to mounted drive
           p += 5;
           strncpy(p, "/mnt", 4);
         }
+#endif
       }
       else {
         // check for prefix %LOCALAPPDATA%\lxss
@@ -672,10 +674,12 @@ paste_hdrop(HDROP drop)
         char * mp = mount_point(p, appd);
         if (mp)
           p = mp;
+#ifdef __CYGWIN__
         else if (strncmp(p, "/cygdrive/", 10) == 0) {
           p += 5;
           strncpy(p, "/mnt", 4);
         }
+#endif
       }
     }
     for (; *p; p++) {

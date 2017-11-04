@@ -1990,7 +1990,7 @@ dlg_fontsel_set(control *ctrl, font_spec *fs)
 
   //char * boldstr = fs->isbold ? "bold, " : "";
   char * boldstr = boldnesses[boldness];
-#if CYGWIN_VERSION_API_MINOR >= 201
+#if (CYGWIN_VERSION_API_MINOR >= 201) && (__SIZEOF_WCHAR_T__ == 2)
   int wsize = wcslen(fs->name) + strlen(boldstr) + (fs->size ? 31 : 17);
   wchar * wbuf = newn(wchar, wsize);
   if (fs->size)

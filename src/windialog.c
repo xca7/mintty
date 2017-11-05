@@ -587,7 +587,11 @@ config_dialog_proc(HWND wnd, UINT msg, WPARAM wParam, LPARAM lParam)
         debug("WM_NOTIFY: GetSelection");
 
         TVITEM item;
+#if (__SIZEOF_WCHAR_T__ == 2)
         TCHAR buffer[64];
+#else
+        WCHAR buffer[64];
+#endif
         item.hItem = i;
         item.pszText = buffer;
         item.cchTextMax = lengthof(buffer);

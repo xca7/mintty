@@ -84,4 +84,20 @@
 #define U16_LITERAL_APP_NAME			(uint16_t[]){'m','i','n','t','t','y',0}
 #define U16_LITERAL_DIALOG_CLASS		(uint16_t[]){'C','o','n','f','i','g','B','o','x',0}
 
+
+#define U16_LITERAL_NRC_DUTCH			(uint16_t[]){0}
+#define U16_LITERAL_NRC_FINNISH			(uint16_t[]){0}
+#define U16_LITERAL_NRC_FRENCH			(uint16_t[]){0}
+#define U16_LITERAL_NRC_FRENCH_CANADIAN		(uint16_t[]){0}
+#define U16_LITERAL_NRC_GERMAN			(uint16_t[]){0}
+#define U16_LITERAL_NRC_ITALIAN			(uint16_t[]){0}
+#define U16_LITERAL_NRC_DANISH_NORWEGIAN	(uint16_t[]){0}
+#define U16_LITERAL_NRC_PORTUGUESE		(uint16_t[]){0}
+#define U16_LITERAL_NRC_SPANISH			(uint16_t[]){0}
+#define U16_LITERAL_NRC_SWEDISH			(uint16_t[]){0}
+#define U16_LITERAL_NRC_SWISS			(uint16_t[]){0}
+
+#define U16_LITERAL_MANY_SYMBOLS		(uint16_t[]){0}
+#define U16_LITERAL_CRYPTIC_QUESTION		(uint16_t[]){0}
+
 #endif

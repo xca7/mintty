@@ -14,6 +14,7 @@
 #include <wtypes.h>
 #include <objidl.h>
 #include <oleidl.h>
+#include <ole2.h>
 #ifdef __CYGWIN__
 #include <sys/cygwin.h>  // cygwin_internal
 #endif

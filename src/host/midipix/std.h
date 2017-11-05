@@ -49,35 +49,35 @@
 #define max(a,b) (((a) > (b)) ? (a) : (b))
 #endif
 
-size_t     wcslen_host        (const uint16_t *);
-uint16_t * wcsstr_host        (const uint16_t *, const uint16_t *);
-uint16_t * wcsdup_host        (const uint16_t *);
-uint16_t * wcscpy_host        (uint16_t *, const uint16_t *);
-uint16_t * wcsncpy_host       (uint16_t *, const uint16_t *, size_t);
-uint16_t * wcschr_host        (const uint16_t *, uint16_t);
-uint16_t * wcsrchr_host       (const uint16_t *, uint16_t);
-uint16_t * wcscat_host        (uint16_t *, const uint16_t *);
-int        wcscmp_host        (const uint16_t *, const uint16_t *);
-int        wcsncmp_host       (const uint16_t *, const uint16_t *, size_t);
-size_t     wcsspn_host        (const uint16_t *, const uint16_t *);
-size_t     wcscspn_host       (const uint16_t *, const uint16_t *);
-size_t     mbstowcs_host      (uint16_t *, const char *, size_t);
-size_t     mbrtowc_host       (uint16_t *, const char *, size_t, mbstate_t *);
+size_t     wcslen_u16         (const uint16_t *);
+uint16_t * wcsstr_u16         (const uint16_t *, const uint16_t *);
+uint16_t * wcsdup_u16         (const uint16_t *);
+uint16_t * wcscpy_u16         (uint16_t *, const uint16_t *);
+uint16_t * wcsncpy_u16        (uint16_t *, const uint16_t *, size_t);
+uint16_t * wcschr_u16         (const uint16_t *, uint16_t);
+uint16_t * wcsrchr_u16        (const uint16_t *, uint16_t);
+uint16_t * wcscat_u16         (uint16_t *, const uint16_t *);
+int        wcscmp_u16         (const uint16_t *, const uint16_t *);
+int        wcsncmp_u16        (const uint16_t *, const uint16_t *, size_t);
+size_t     wcsspn_u16         (const uint16_t *, const uint16_t *);
+size_t     wcscspn_u16        (const uint16_t *, const uint16_t *);
+size_t     mbstowcs_u16       (uint16_t *, const char *, size_t);
+size_t     mbrtowc_u16        (uint16_t *, const char *, size_t, mbstate_t *);
 
-#define    wcslen              wcslen_host
-#define    wcsstr              wcsstr_host
-#define    wcsdup              wcsdup_host
-#define    wcscpy              wcscpy_host
-#define    wcsncpy             wcsncpy_host
-#define    wcschr              wcschr_host
-#define    wcsrchr             wcsrchr_host
-#define    wcscat              wcscat_host
-#define    wcscmp              wcscmp_host
-#define    wcsncmp             wcsncmp_host
-#define    wcsspn              wcsspn_host
-#define    wcscspn             wcscspn_host
-#define    mbstowcs            mbstowcs_host
-#define    mbrtowc             mbrtowc_host
+#define    wcslen              wcslen_u16
+#define    wcsstr              wcsstr_u16
+#define    wcsdup              wcsdup_u16
+#define    wcscpy              wcscpy_u16
+#define    wcsncpy             wcsncpy_u16
+#define    wcschr              wcschr_u16
+#define    wcsrchr             wcsrchr_u16
+#define    wcscat              wcscat_u16
+#define    wcscmp              wcscmp_u16
+#define    wcsncmp             wcsncmp_u16
+#define    wcsspn              wcsspn_u16
+#define    wcscspn             wcscspn_u16
+#define    mbstowcs            mbstowcs_u16
+#define    mbrtowc             mbrtowc_u16
 
 #include "framework.h"
 #include "charset.h"

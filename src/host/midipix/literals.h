@@ -1,6 +1,8 @@
 #ifndef _HOST_LITERALS_H_
 #define _HOST_LITERALS_H_
 
+#define U16_LITERAL_NEWLINE			{'\n',0}
+
 #define U16_LITERAL_NULL_STRING			(uint16_t[]){0}
 #define U16_LITERAL_EMPTY_STRING		(uint16_t[]){' ',0}
 #define U16_LITERAL_DASH			(uint16_t[]){'-',0}
@@ -77,6 +79,7 @@
 #define U16_LITERAL_ROOT			(uint16_t[]){'r','o','o','t',0}
 #define U16_LITERAL_ROOTFS			(uint16_t[]){'/','r','o','o','t','f','s',0}
 #define U16_LITERAL_LXSS			(uint16_t[]){'/','l','x','s','s',0}
+#define U16_LITERAL_MNT_FS			(uint16_t[]){'/','m','n','t','/',0}
 #define U16_LITERAL_DEV_FS			(uint16_t[]){'/','d','e','v','/','f','s',0}
 #define U16_LITERAL_BASIC_COLOURS		(uint16_t[]){'B','&','a','s','i','c',' ','C','o','l','o','u','r','s',0}
 #define U16_LITERAL_STATIC			(uint16_t[]){'S','t','a','t','i','c',0}

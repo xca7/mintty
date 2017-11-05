@@ -81,4 +81,7 @@
 #define U16_LITERAL_BASIC_COLOURS		(uint16_t[]){'B','&','a','s','i','c',' ','C','o','l','o','u','r','s',0}
 #define U16_LITERAL_STATIC			(uint16_t[]){'S','t','a','t','i','c',0}
 
+#define U16_LITERAL_APP_NAME			(uint16_t[]){'m','i','n','t','t','y',0}
+#define U16_LITERAL_DIALOG_CLASS		(uint16_t[]){'C','o','n','f','i','g','B','o','x',0}
+
 #endif

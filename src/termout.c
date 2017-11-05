@@ -15,7 +15,11 @@
 #include "winimg.h"
 #include "base64.h"
 
+#ifdef __CYGWIN__
 #include <sys/termios.h>
+#else
+#include <termios.h>
+#endif
 
 #define TERM_CMD_BUF_INC_STEP 128
 #define TERM_CMD_BUF_MAX_SIZE (1024 * 1024)

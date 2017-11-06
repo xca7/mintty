@@ -1,7 +1,13 @@
 #ifndef _HOST_STD_H_
 #define _HOST_STD_H_
 
-#define  WINAPI_UTF16_DEFAULT
+#ifndef ARGZ_INTERNAL_IMPL
+#define ARGZ_INTERNAL_IMPL   1
+#endif
+
+#ifndef WINAPI_UTF16_DEFAULT
+#define WINAPI_UTF16_DEFAULT 1
+#endif
 
 /*****************************************************************/
 /* mintty was (and still is) written for 16-bit wide characters. */
@@ -20,10 +26,6 @@
 
 #include <sys/ioctl.h>
 #include <sys/ttydefaults.h>
-
-#ifndef WINAPI_UTF16_DEFAULT
-#define WINAPI_UTF16_DEFAULT (1)
-#endif
 
 #ifndef MAXLONG
 #define MAXLONG (0x7fffffff)

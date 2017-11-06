@@ -83,6 +83,53 @@
 #define U16_LITERAL_DEV_FS			(uint16_t[]){'/','d','e','v','/','f','s',0}
 #define U16_LITERAL_BASIC_COLOURS		(uint16_t[]){'B','&','a','s','i','c',' ','C','o','l','o','u','r','s',0}
 #define U16_LITERAL_STATIC			(uint16_t[]){'S','t','a','t','i','c',0}
+#define U16_LITERAL_SESSION_SWITCHER		(uint16_t[]){'S','e','s','s','i','o','n',' ','s','w','i','t','c','h','e','r',0}
+#define U16_LITERAL_SESSION_LAUNCHER		(uint16_t[]){'S','s','s','s','i','o','n',' ','l','a','u','n','c','h','e','r',0}
+#define U16_LITERAL_CTRL_PLUS			(uint16_t[]){'C','t','r','l','+',0}
+#define U16_LITERAL_ALT_PLUS			(uint16_t[]){'A','l','t','+',0}
+#define U16_LITERAL_SHIFT_PLUS			(uint16_t[]){'S','h','i','f','t','+',0}
+#define U16_LITERAL_ALT_F4			(uint16_t[]){'A','l','t','+','F','4',0}
+#define U16_LITERAL_ALT_F3			(uint16_t[]){'A','l','t','+','F','4',0}
+#define U16_LITERAL_ALT_F2			(uint16_t[]){'A','l','t','+','F','4',0}
+#define U16_LITERAL_ALT_F8			(uint16_t[]){'A','l','t','+','F','4',0}
+#define U16_LITERAL_ALT_F10			(uint16_t[]){'A','l','t','+','F','1','0',0}
+#define U16_LITERAL_ALT_F11			(uint16_t[]){'A','l','t','+','F','1','1',0}
+#define U16_LITERAL_ALT_F12			(uint16_t[]){'A','l','t','+','F','1','2',0}
+#define U16_LITERAL_CTRL_SHIFT_W		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','W',0}
+#define U16_LITERAL_CTRL_SHIFT_N		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','N',0}
+#define U16_LITERAL_CTRL_SHIFT_C		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','C',0}
+#define U16_LITERAL_CTRL_SHIFT_V		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','V',0}
+#define U16_LITERAL_CTRL_SHIFT_D		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','D',0}
+#define U16_LITERAL_CTRL_SHIFT_F		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','F',0}
+#define U16_LITERAL_CTRL_SHIFT_H		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','H',0}
+#define U16_LITERAL_CTRL_SHIFT_R                (uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','R',0}
+#define U16_LITERAL_CTRL_SHIFT_S		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','S',0}
+#define U16_LITERAL_T                           (uint16_t[]){'\t',0}
+#define U16_LITERAL_CTRL_INS			(uint16_t[]){'C','t','r','l','+','I','n','s',0}
+#define U16_LITERAL_SHIFT_INS			(uint16_t[]){'S','h','i','f','t','+','I','n','s',0}
+#define U16_LITERAL_CTRL_SHIFT_INS		(uint16_t[]){'C','t','r','l','+','S','h','i','f','t','+','I','n','s',0}
+
+
+#define U16_LITERAL_NEW				(uint16_t[]){'N','e','&','w',0}
+#define U16_LITERAL_COPY			(uint16_t[]){'&','C','o','p','y',0}
+#define U16_LITERAL_RESTORE			(uint16_t[]){'&','R','e','s','t','o','r','e',0}
+#define U16_LITERAL_MOVE			(uint16_t[]){'&','M','o','v','e',0}
+#define U16_LITERAL_SIZE			(uint16_t[]){'&','S','i','z','e',0}
+#define U16_LITERAL_PASTE			(uint16_t[]){'&','P','a','s','t','e',' ',0}
+#define U16_LITERAL_COPY_PASTE			(uint16_t[]){'C','o','p','y',' ','-',' ','P','a','s','t','e',0}
+#define U16_LITERAL_SEARCH			(uint16_t[]){'S','&','e','a','r','c','h',0}
+#define U16_LITERAL_LOG_TO_FILE			(uint16_t[]){'&','L','o','g',' ','t','o',' ','F','i','l','e',0}
+#define U16_LITERAL_CHARACTER_INFO		(uint16_t[]){'C','h','a','r','a','c','t','e','r',' ','&','I','n','f','o',0}
+#define U16_LITERAL_RESET			(uint16_t[]){'&','R','e','s','e','t',0}
+#define U16_LITERAL_DEFAULT_SIZE		(uint16_t[]){'&','D','e','f','a','u','l','t',' ','S','i','z','e',0}
+#define U16_LITERAL_FULL_SCREEN			(uint16_t[]){'&','F','u','l','l',' ','S','c','r','e','e','n',0}
+#define U16_LITERAL_FLIP_SCREEN			(uint16_t[]){'F','l','i','p',' ','&','S','c','r','e','e','n',0}
+#define U16_LITERAL_COPY_TITLE			(uint16_t[]){'C','o','p','y',' ','&','T','i','t','l','e'}
+#define U16_LITERAL_OPTIONS			(uint16_t[]){'&','O','p','t','i','o','n','s','.','.','.',0}
+#define U16_LITERAL_OPEN			(uint16_t[]){'O','p','e','&','n',0}
+#define U16_LITERAL_SELECT_ALL			(uint16_t[]){'S','e','l','e','c','t',' ','&','A','l','l',0}
+#define U16_LITERAL_CLEAR_SCROLLBACK		(uint16_t[]){'C','l','e','a','r',' ','S','c','r','o','l','l','b','a','c','k',0}
+
 
 #define U16_LITERAL_APP_NAME			(uint16_t[]){'m','i','n','t','t','y',0}
 #define U16_LITERAL_DIALOG_CLASS		(uint16_t[]){'C','o','n','f','i','g','B','o','x',0}

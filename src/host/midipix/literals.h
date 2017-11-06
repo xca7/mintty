@@ -1,7 +1,8 @@
 #ifndef _HOST_LITERALS_H_
 #define _HOST_LITERALS_H_
 
-#define U16_LITERAL_NEWLINE			{'\n',0}
+#define U16_LITERAL_NEWLINE_VAR			{'\n',0}
+#define U16_LITERAL_NEWLINE_CONST		(uint16_t[]){'\n',0}
 
 #define U16_LITERAL_NULL_STRING			(uint16_t[]){0}
 #define U16_LITERAL_EMPTY_STRING		(uint16_t[]){' ',0}
@@ -129,6 +130,23 @@
 #define U16_LITERAL_OPEN			(uint16_t[]){'O','p','e','&','n',0}
 #define U16_LITERAL_SELECT_ALL			(uint16_t[]){'S','e','l','e','c','t',' ','&','A','l','l',0}
 #define U16_LITERAL_CLEAR_SCROLLBACK		(uint16_t[]){'C','l','e','a','r',' ','S','c','r','o','l','l','b','a','c','k',0}
+#define U16_LITERAL_WAV				(uint16_t[]){'.','w','a','v',0}
+#define U16_LITERAL_SOUNDS2			(uint16_t[]){'s','o','u','n','d','s',0}
+#define U16_LITERAL_DISTRIBUTION_NAME		(uint16_t[]){'D','i','s','t','r','i','b','u','t','i','o','n','N','a','m','e',0}
+#define U16_LITERAL_BASEPATH			(uint16_t[]){'B','a','s','e','P','a','t','h',0}
+#define U16_LITERAL_PACKAGE_FAMILY_NAME		(uint16_t[]){'P','a','c','k','a','g','e','F','a','m','i','l','y','N','a','m','e',0}
+#define U16_LITERAL_MSG_PRE			(uint16_t[]){'P','r','o','c','e','s','s','e','s',' ','a','r','e',' ','r','u','n','n','i','n','g',' ','i','n',' ','s','e','s','s','i','o','n',':',0}
+#define U16_LITERAL_MSG_POST			(uint16_t[]){'C','l','o','s','e',' ','a','n','y','w','a','y',0}
+#define U16_LITERAL_PACKAGE_FULL_NAME		(uint16_t[]){'P','a','c','k','a','g','e','F','u','l','l','N','a','m','e',0}
+#define U16_LITERAL_SCHEMAS			(uint16_t[]){'S','c','h','e','m','a','s',0}
+#define U16_LITERAL_DEFAULT_DISTRIBUTION	(uint16_t[]){'D','e','f','a','u','l','t','D','i','s','t','r','i','b','u','t','i','o','n',0}
+#define U16_LITERAL_LXSS_BASH_ICO		(uint16_t[]){'\\','\\','l','x','s','s','\\','\\','b','a','s','h','.','i','c','o',0}
+#define U16_LITERAL_LXSS_ROOTFS			(uint16_t[]){'\\','\\','r','o','o','t','f','s',0}
+#define U16_LITERAL_LXSS_REGISTRY		(uint16_t[]){'S','O','F','T','W','A','R','E','\\','\\','M','i','c','r','o','s','o','f','t','\\','\\','C','u','r','r','e','n','t','V','e','r','s','i','o','n','\\','\\','L','x','s','s',0}
+#define U16_LITERAL_APPMODEL_REGISTRY		(uint16_t[]){'S','o','f','t','w','a','r','e','\\','\\','C','l','a','s','s','e','s','\\','\\','L','o','c','a','l',' ','S','e','t','t','i','n','g','s','\\','\\','S','o','f','t','w','a','r','e','\\','\\','M','i','c','r','o','s','o','f','t','\\','\\','W','i','n','d','o','w','s','\\','\\','C','u','r','r','e','n','t','V','e','r','s','i','o','n','\\','\\','A','p','p','M','o','d','e','l','\\','\\','S','y','s','t','e','m','A','p','p','D','a','t','a',0}
+#define U16_LITERAL_WINDOWS_APPS		(uint16_t[]){'\\','\\','W','i','n','d','o','w','s','\\','\\',0}
+#define U16_LITERAL_IMAGES_ICON			(uint16_t[]){'\\','\\','i','m','a','g','e','s','\\','\\','i','c','o','n','.','i','c','o',0}
+#define U16_LITERAL_LXSS_ROOT			(uint16_t[]){'\\','\\','l','x','s','s',0}
 
 
 #define U16_LITERAL_APP_NAME			(uint16_t[]){'m','i','n','t','t','y',0}

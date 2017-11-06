@@ -9,12 +9,9 @@
 #define WINAPI_UTF16_DEFAULT 1
 #endif
 
-/*****************************************************************/
-/* mintty was (and still is) written for 16-bit wide characters. */
-/* for as long as this remains the case, providing a surrogate   */
-/* std.h for portable targets seems to be the least painful      */
-/* path to a successful port.                                    */
-/*****************************************************************/
+/******************************************************/
+/* the midipix framework uses 32-bit wide characters. */
+/******************************************************/
 
 #include <features.h>
 #include <stdint.h>

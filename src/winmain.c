@@ -2542,11 +2542,12 @@ getreg(HKEY key, wstring subkey, wstring attribute)
 
 #define dont_debug_reg_lxss
 
+static wstring lxsskeyname = W("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Lxss");
+
 static bool
 getlxssinfo(wstring wslname,
             char ** wsl_guid, wstring * wsl_rootfs, wstring * wsl_icon)
 {
-  static wstring lxsskeyname = W("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Lxss");
   HKEY lxss = regopen(HKEY_CURRENT_USER, lxsskeyname);
   if (!lxss)
     return false;

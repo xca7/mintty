@@ -12,6 +12,12 @@ char * mintty_debug;
 
 #define dont_debug_resize
 
+#include <windows.h>
+#include <objbase.h>
+#include <objidl.h>
+#include <oleidl.h>
+#include <ole2.h>
+
 #include "winpriv.h"
 #include "winsearch.h"
 #include "winimg.h"

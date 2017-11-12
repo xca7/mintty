@@ -1,6 +1,10 @@
 #ifndef _HOST_STD_H_
 #define _HOST_STD_H_
 
+#ifndef use_curl
+#define use_curl 1
+#endif
+
 #ifndef ARGZ_INTERNAL_IMPL
 #define ARGZ_INTERNAL_IMPL   1
 #endif

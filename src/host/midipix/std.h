@@ -24,6 +24,8 @@
 #include <sys/ioctl.h>
 #include <sys/ttydefaults.h>
 
+#include <u16ports/u16ports.h>
+
 #ifndef MAXLONG
 #define MAXLONG (0x7fffffff)
 #endif
@@ -48,35 +50,20 @@
 #define max(a,b) (((a) > (b)) ? (a) : (b))
 #endif
 
-size_t     wcslen_u16         (const uint16_t *);
-uint16_t * wcsstr_u16         (const uint16_t *, const uint16_t *);
-uint16_t * wcsdup_u16         (const uint16_t *);
-uint16_t * wcscpy_u16         (uint16_t *, const uint16_t *);
-uint16_t * wcsncpy_u16        (uint16_t *, const uint16_t *, size_t);
-uint16_t * wcschr_u16         (const uint16_t *, uint32_t);
-uint16_t * wcsrchr_u16        (const uint16_t *, uint32_t);
-uint16_t * wcscat_u16         (uint16_t *, const uint16_t *);
-int        wcscmp_u16         (const uint16_t *, const uint16_t *);
-int        wcsncmp_u16        (const uint16_t *, const uint16_t *, size_t);
-size_t     wcsspn_u16         (const uint16_t *, const uint16_t *);
-size_t     wcscspn_u16        (const uint16_t *, const uint16_t *);
-size_t     mbstowcs_u16       (uint16_t *, const char *, size_t);
-size_t     mbrtowc_u16        (uint16_t *, const char *, size_t, mbstate_t *);
-
-#define    wcslen              wcslen_u16
-#define    wcsstr              wcsstr_u16
-#define    wcsdup              wcsdup_u16
-#define    wcscpy              wcscpy_u16
-#define    wcsncpy             wcsncpy_u16
-#define    wcschr              wcschr_u16
-#define    wcsrchr             wcsrchr_u16
-#define    wcscat              wcscat_u16
-#define    wcscmp              wcscmp_u16
-#define    wcsncmp             wcsncmp_u16
-#define    wcsspn              wcsspn_u16
-#define    wcscspn             wcscspn_u16
-#define    mbstowcs            mbstowcs_u16
-#define    mbrtowc             mbrtowc_u16
+#define    wcslen              u16_wcslen
+#define    wcsstr              u16_wcsstr
+#define    wcsdup              u16_wcsdup
+#define    wcscpy              u16_wcscpy
+#define    wcsncpy             u16_wcsncpy
+#define    wcschr              u16_wcschr
+#define    wcsrchr             u16_wcsrchr
+#define    wcscat              u16_wcscat
+#define    wcscmp              u16_wcscmp
+#define    wcsncmp             u16_wcsncmp
+#define    wcsspn              u16_wcsspn
+#define    wcscspn             u16_wcscspn
+#define    mbstowcs            u16_mbstowcs
+#define    mbrtowc             u16_mbrtowc
 
 #include "framework.h"
 #include "charset.h"

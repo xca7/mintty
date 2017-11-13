@@ -9,6 +9,8 @@
 // non-ASCII strings are converted before being passed to the platform 
 // (using UTF-16 on Windows)
 
+#include <sys/stat.h>
+
 #include "term.h"
 #include "ctrls.h"
 #include "print.h"

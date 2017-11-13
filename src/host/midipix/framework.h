@@ -9,12 +9,8 @@
 #include <ntapi/nt_atomic.h>
 
 void    login_host         (const struct utmp *);
-int     mkdirat_host       (int, const char *, mode_t);
-
-
 
 #define login               login_host
-#define mkdirat             mkdirat_host
 
 #ifndef CopyMemory
 #define CopyMemory          memcpy

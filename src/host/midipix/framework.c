@@ -203,3 +203,9 @@ int cs_print_font_info(
 
 	return ret;
 }
+
+
+void login_host(const struct utmp * ut)
+{
+	(void)ut;
+}

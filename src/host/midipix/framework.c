@@ -8,6 +8,7 @@
 #include <fcntl.h>
 #include <stdint.h>
 #include <stddef.h>
+#include <locale.h>
 
 #include <windef.h>
 #include <winnls.h>
@@ -45,6 +46,12 @@ static void cs_strconv_init()
 
 	w32api_strconv_utf8_to_utf16 = dlsym(hkernel32,"MultiByteToWideChar");
 	w32api_strconv_utf16_to_utf8 = dlsym(hkernel32,"WideCharToMultiByte");
+}
+
+__attribute__((constructor))
+static void cs_locale_init()
+{
+	setlocale(LC_ALL, "");
 }
 
 char * cs_pathconv_posix_utf8_to_w32cmd_utf8(const char * from_path)

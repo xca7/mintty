@@ -198,6 +198,7 @@ void
 child_create(char *argv[], struct winsize *winp)
 {
   string lang = cs_lang();
+  struct termios tiom;
 
   // xterm and urxvt ignore SIGHUP, so let's do the same.
   signal(SIGHUP, SIG_IGN);
@@ -307,6 +308,9 @@ child_create(char *argv[], struct winsize *winp)
     exit(255);
   }
   else { // Parent process.
+    tcgetattr(pty_fd,&tiom);
+    cfmakeraw(&tiom);
+    tcsetattr(pty_fd,TCSANOW,&tiom);
     fcntl(pty_fd, F_SETFL, O_NONBLOCK);
 
     //child_update_charset();  // could do it here or as above

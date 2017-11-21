@@ -118,7 +118,10 @@ int cs_strconv_utf16_to_utf8(
 	const char *		defchar,
 	int *			defcharused)
 {
-	if (cp != CP_UTF8)
+	if (cp == CP_ACP)
+		cp = CP_UTF8;
+
+	else if (cp != CP_UTF8)
 		return 0;
 
 	return w32api_strconv_utf16_to_utf8(
@@ -137,7 +140,10 @@ int cs_strconv_utf8_to_utf16(
 	uint16_t *		wch,
 	int			wchlen)
 {
-	if (cp != CP_UTF8)
+	if (cp == CP_ACP)
+		cp = CP_UTF8;
+
+	else if (cp != CP_UTF8)
 		return 0;
 
 	return w32api_strconv_utf8_to_utf16(
